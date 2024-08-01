@@ -1,24 +1,16 @@
-# map-demo
+# 概述
 
-## Project setup
-```
-npm install
-```
+使用vue2 vue-cli；主要是帮别人做的用的vue2
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+实际什么框架都可以 这个地图库就是js的对象操作关系不大
 
-### Compiles and minifies for production
-```
-npm run build
-```
+想用react vue3 ts 看 methods文件的方法就行了
 
-### Lints and fixes files
-```
-npm run lint
-```
+# 用到的库
+1. leaflet
+2. leaflet.markercluster  点聚合插件
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 具体功能
+1. 不同类型的图层切换
+2. 打点，以及对点为的编辑、删除操作
+3. 点聚合功能，采用leaflet.markercluster插件图层形式的
