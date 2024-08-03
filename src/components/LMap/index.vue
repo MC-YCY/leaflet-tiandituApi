@@ -38,7 +38,8 @@ export default {
           },
           name: '名字1',
           region: 'region',
-          hotType: '啊我的娃'
+          hotType: '啊我的娃',
+          timeId:1,
         },
         {
           latlng:{
@@ -47,7 +48,8 @@ export default {
           },
           name: '名字1',
           region: 'region',
-          hotType: '啊我的娃'
+          hotType: '啊我的娃',
+          timeId:2,
         },
         {
           latlng:{
@@ -56,7 +58,8 @@ export default {
           },
           name: '名字1',
           region: 'region',
-          hotType: '啊我的娃'
+          hotType: '啊我的娃',
+          timeId:3,
         }
       ]
     }
@@ -115,7 +118,7 @@ export default {
             return item;
           }
         })
-        findItem.remove();
+        findItem && findItem.remove && findItem.remove();
         this.markList.splice(findK,1);
         removePopup(this.map);
       }
