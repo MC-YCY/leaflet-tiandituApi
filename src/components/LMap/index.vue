@@ -119,6 +119,7 @@ export default {
           }
         })
         findItem && findItem.remove && findItem.remove();
+        this.map.markers.removeLayer(findItem);
         this.markList.splice(findK,1);
         removePopup(this.map);
       }
