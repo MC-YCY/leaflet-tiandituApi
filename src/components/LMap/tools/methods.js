@@ -197,7 +197,12 @@ export const editMarkerMethod = {
         let item = list.find((v) => {
             if (v.formState.timeId === form.timeId) return v;
         })
-        item.formState = {...form};
+        if(!item) return;
+        for(let k in item.formState){
+            if(k in form){
+                item.formState[k] = form[k]
+            }
+        }
     }
 }
 

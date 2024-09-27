@@ -106,14 +106,14 @@ export default {
     },
 
     showPopup(formState){
-      let linkSet = (formState) =>{
+      let linkSet = (formStateEvent) =>{
         formState.type = "修改";
-        this.$refs.RefEditMarker.show(formState);
+        this.$refs.RefEditMarker.show(formStateEvent);
       }
-      let linkDel = (formState) =>{
+      let linkDel = (formStateEvent) =>{
         let findK = null;
         let findItem = this.markList.find((item,index)=>{
-          if(item.formState.timeId === formState.timeId){
+          if(item.formState.timeId === formStateEvent.timeId){
             findK = index;
             return item;
           }
