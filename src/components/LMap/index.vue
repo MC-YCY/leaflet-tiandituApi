@@ -98,7 +98,7 @@ export default {
       let deepArray = deepClone(this.markList);
       this.markList.length = 0;
       deepArray.map((item)=>{
-        this.editSubmit(item.formState);
+        this.editSubmit({...item.formState,type:null});
       })
     },
     clickAddPoint() {
